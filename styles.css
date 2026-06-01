@@ -1766,6 +1766,30 @@ ul {
   font-size: var(--text-xs);
 }
 
+.footer-attribution {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+.footer-attribution a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(26, 31, 46, 0.22);
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+.footer-attribution a:hover {
+  color: var(--color-earth);
+  text-decoration-color: currentColor;
+}
+
+.footer-attribution a:focus-visible {
+  outline-offset: 3px;
+}
+
 .footer-nav {
   display: flex;
   justify-content: center;
